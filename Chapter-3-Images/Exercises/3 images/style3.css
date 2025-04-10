@@ -1,0 +1,102 @@
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #f7f9fc; /* Light neutral background */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.image-card {
+    margin: 25px;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    max-width: 320px;
+}
+
+.image-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+    filter: grayscale(100%) brightness(85%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 3px solid #ececec;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-card img:hover {
+    filter: grayscale(0%) brightness(100%);
+    transform: scale(1.1);
+    border-color: #1e90ff;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    background: linear-gradient(to right, #4b9cd3, #77b5fe);
+    background-clip: text; /* Modern gradient text */
+    color: transparent;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.12), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.8em;
+    position: relative;
+    font-weight: 600;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #1e90ff;
+    bottom: -6px;
+    left: 25%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.image-card:hover h2::after {
+    width: 75%;
+    background-color: #ff6347;
+}
+
+p {
+    margin: 15px 0;
+    font-family: 'Verdana', sans-serif;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1em;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.image-card:hover p {
+    opacity: 1;
+    color: #333;
+}
+
+.credit {
+    font-size: 0.9em;
+    color: #808080;
+    margin-top: 12px;
+    font-style: italic;
+    background: rgba(240, 248, 255, 0.8);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border-left: 4px solid #1e90ff;
+}
