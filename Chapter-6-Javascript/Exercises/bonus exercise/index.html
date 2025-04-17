@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Colour Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <h1>Guess the Colour!</h1>
+        <p>Lives: <span id="lives">3</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <h2 id="rgb-value">RGB(?, ?, ?)</h2>
+
+        <div id="colors" class="colors"></div>
+
+        <p id="message"></p>
+
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p id="final-score">Score: 0</p>
+            <button id="replay">Play Again</button>
+        </div>
+    </div>
+
+    <script src="RGBGame.js"></script>
+</body>
+</html>

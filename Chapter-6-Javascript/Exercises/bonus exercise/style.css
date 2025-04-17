@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+#rgb-value {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.colors div {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colors div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#message {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #E94F37;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    margin-top: 1rem;
+}
+
+#game-over h2 {
+    color: #E94F37;
+}
+
+#replay {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#replay:hover {
+    background-color: #45a049;
+}
